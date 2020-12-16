@@ -1,0 +1,58 @@
+﻿@model WebApplication3.Models.facility
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>facility</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fPrice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.fid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
